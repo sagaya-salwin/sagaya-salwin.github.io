@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sagaya Salwin S | SAP ABAP & EWM Consultant</title>
-<meta name="description" content="SAP ABAP consultant working on S/4HANA EWM, RAP and SAP BTP (CAP, Fiori). Project case studies and skills.">
+<meta name="description" content="SAP ABAP and EWM consultant: RAP, OData, EWM RF and enhancements, SAP CAP, Fiori and AI agents with MCP. Open to roles in Dubai and Germany.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -212,8 +212,8 @@
   <header class="hero">
     <div>
       <h1>Sagaya Salwin&nbsp;S</h1>
-      <p class="role">SAP ABAP consultant for S/4HANA EWM and SAP BTP</p>
-      <p class="intro">I build the custom pieces warehouses and approvers actually use: RF scanner transactions in EWM, RAP services on S/4HANA, and CAP + Fiori apps on SAP BTP. Currently at Tolaram, based in India.</p>
+      <p class="role">SAP ABAP &amp; EWM consultant, building on S/4HANA and SAP BTP</p>
+      <p class="intro">I build the custom pieces warehouses and approvers actually use: RF scanner transactions and complex enhancements in EWM, RAP and OData services on S/4HANA, CAP + Fiori apps on SAP BTP, and now AI agents that work with SAP data through MCP. Currently at Tolaram in India, open to roles in Dubai and Germany.</p>
       <div class="links">
         <a class="btn primary" href="#projects">See projects</a>
         <a class="btn" href="https://www.linkedin.com/in/sagaya-salwin">LinkedIn</a>
@@ -228,9 +228,9 @@
         <dl>
           <dt>Role</dt><dd>ABAP / EWM</dd>
           <dt>Base</dt><dd>India</dd>
-          <dt>Builds</dt><dd>RF, RAP, CAP</dd>
+          <dt>Builds</dt><dd>RF, RAP, CAP, AI</dd>
           <dt>Cloud</dt><dd>SAP BTP</dd>
-          <dt>Status</dt><dd>Open to talk</dd>
+          <dt>Open to</dt><dd>Dubai, Germany</dd>
         </dl>
         <div class="field">Scan: <span><span class="cursor" aria-hidden="true">&nbsp;</span></span></div>
       </div>
@@ -253,13 +253,28 @@
         <h3>Purchase order approval inbox</h3>
         <p class="status">Running in development, built to replace My Inbox</p>
         <ul class="stack">
-          <li>SAP CAP (Node.js)</li><li>Fiori / UI5</li><li>SAP Event Mesh</li><li>RAP OData</li><li>Build Work Zone</li>
+          <li>SAP CAP (Node.js)</li><li>Fiori / UI5</li><li>SAP Event Mesh</li><li>RAP OData</li><li>Work Zone notifications</li>
         </ul>
       </div>
       <div class="body">
         <p><strong>Problem.</strong> Approvers handled purchase order flexible-workflow approvals in the standard My Inbox and needed an inbox that works well on desktop and mobile, with the same features.</p>
-        <p><strong>What I built.</strong> An event-driven CAP and Fiori app in SAP Build Work Zone. S/4HANA business events reach the app through SAP Event Mesh, and approve or reject decisions go back through a RAP-based OData service. I proved each layer step by step: an ABAP approval program first, then the OData service, then the CAP app.</p>
+        <p><strong>What I built.</strong> An event-driven CAP and Fiori app in SAP Build Work Zone. S/4HANA business events reach the app through SAP Event Mesh, approvers are alerted through Work Zone notifications, and approve or reject decisions go back through a RAP-based OData service. I proved each layer step by step: an ABAP approval program first, then the OData service, then the CAP app.</p>
         <p><strong>Design choice.</strong> The app keeps only temporary PO data (header and line items) and removes it once a PO is decided, so S/4HANA stays the single source of truth.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>AI agent for purchase order analysis</h3>
+        <p class="status">Proof of concept</p>
+        <ul class="stack">
+          <li>AI agent</li><li>MCP</li><li>SAP CAP</li><li>React</li><li>S/4HANA OData</li>
+        </ul>
+      </div>
+      <div class="body">
+        <p><strong>Idea.</strong> Let a buyer or approver ask questions about purchase orders in plain language instead of running reports and transactions one by one.</p>
+        <p><strong>What I built.</strong> An AI agent that reaches SAP purchase order data through MCP (Model Context Protocol) tools, with a SAP CAP back end and a React front end. The agent picks the right tool, pulls the PO data and returns an analysis the user can act on.</p>
+        <p><strong>Why it matters.</strong> It connects classic S/4HANA data with modern AI agents, which is where SAP projects are heading.</p>
       </div>
     </article>
 
@@ -294,6 +309,34 @@
 
     <article class="project">
       <div>
+        <h3>Complex EWM enhancements</h3>
+        <p class="status">Delivered in live EWM processes</p>
+        <ul class="stack">
+          <li>EWM BAdIs</li><li>Enhancement framework</li><li>ABAP OO</li><li>RF framework</li>
+        </ul>
+      </div>
+      <div class="body">
+        <p><strong>What it covers.</strong> Business requirements that standard EWM can't meet through configuration alone. I design and build enhancements that change how warehouse processes behave while keeping the standard flow and upgrades safe.</p>
+        <p><strong>How I work.</strong> First I check whether configuration can solve it, then I find the right standard enhancement point (BAdIs, enhancement spots, RF steps) and only then write custom code, so every enhancement stays small and maintainable.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>EWM implementation, functional and technical</h3>
+        <p class="status">Project work plus a full warehouse built in a sandbox</p>
+        <ul class="stack">
+          <li>S/4HANA embedded EWM</li><li>SPRO configuration</li><li>Inbound and outbound</li><li>RF</li>
+        </ul>
+      </div>
+      <div class="body">
+        <p><strong>Functional side.</strong> I've worked on EWM implementations on the functional side as well as the technical one, so I understand the process a requirement comes from, not just the code it needs.</p>
+        <p><strong>Hands-on build.</strong> To learn configuration end to end, I set up a complete embedded EWM warehouse from scratch in a sandbox: organisational structure, warehouse setup, and inbound and outbound cycles proven end to end. Put-away and stock removal strategies are next. Every step is documented with its IMG path.</p>
+      </div>
+    </article>
+
+    <article class="project">
+      <div>
         <h3>Row-level data separation in a RAP app</h3>
         <p class="status">Design and implementation in progress</p>
         <ul class="stack">
@@ -303,20 +346,6 @@
       <div class="body">
         <p><strong>Problem.</strong> Two business entities share one RAP app for bundle material headers and items, and neither may see the other's data.</p>
         <p><strong>Approach.</strong> CDS access controls (DCL) filter what each user can read, and instance authorization in the behavior definition blocks changes to records outside the user's entity.</p>
-      </div>
-    </article>
-
-    <article class="project">
-      <div>
-        <h3>Embedded EWM warehouse built from scratch</h3>
-        <p class="status">Ongoing hands-on build in a sandbox</p>
-        <ul class="stack">
-          <li>S/4HANA embedded EWM</li><li>SPRO configuration</li><li>Inbound and outbound</li>
-        </ul>
-      </div>
-      <div class="body">
-        <p><strong>Why.</strong> To understand EWM configuration end to end, not just the code around it.</p>
-        <p><strong>Where it stands.</strong> I set up the organisational structure and warehouse, and proved the inbound and outbound cycles end to end. Put-away and stock removal strategies are next. I document every step with its IMG path in a build sheet.</p>
       </div>
     </article>
   </div>
@@ -329,15 +358,19 @@
     <div class="skills">
       <div>
         <h3>ABAP on S/4HANA</h3>
-        <p>RAP (managed and unmanaged), CDS views, access controls, OData V2 and V4, function modules, BAPIs.</p>
+        <p>RAP managed and unmanaged, OData V2 (SEGW) and V4, CDS views and access controls, ABAP OO, function modules, BAPIs.</p>
       </div>
       <div>
         <h3>SAP EWM</h3>
-        <p>RF framework (/SCWM/RFUI), logical transactions and steps, custom RF logic, warehouse configuration.</p>
+        <p>Functional implementation and configuration, RF framework (/SCWM/RFUI) and custom RF transactions, complex enhancements with BAdIs.</p>
       </div>
       <div>
         <h3>SAP BTP</h3>
-        <p>CAP (Node.js), Fiori / UI5, MTA deployment, XSUAA roles, destinations, Event Mesh, Build Work Zone.</p>
+        <p>CAP (Node.js), Fiori / UI5, MTA deployment, XSUAA roles, destinations, Event Mesh, Build Work Zone and its notifications.</p>
+      </div>
+      <div>
+        <h3>AI with SAP</h3>
+        <p>AI agents, MCP (Model Context Protocol) tools over SAP data, CAP back ends with React front ends.</p>
       </div>
     </div>
   </div>

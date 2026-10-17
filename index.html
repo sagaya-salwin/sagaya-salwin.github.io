@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sagaya Salwin S | SAP ABAP, EWM &amp; BTP Consultant</title>
-<meta name="description" content="SAP ABAP technical consultant: RAP, AMDP, OData, EWM RF and enhancements, EWM–TM integration, SAP CAP and AI agents with MCP.">
+<meta name="description" content="SAP ABAP developer: RAP (managed and unmanaged), SAP CAP on BTP, Fiori, AMDP, EWM RF and enhancements, EWM–TM integration, and AI agents with MCP and Joule notifications.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -123,11 +123,24 @@
   .job p { margin: 0 0 8px; max-width: 42em; }
   .job .where { color: var(--muted); margin: 0; }
 
+  /* Core expertise tiles */
+  .core { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 0 0 28px; }
+  .core div { background: var(--accent); color: #fff; border-radius: 10px; padding: 20px 22px; }
+  .core h3 { font-size: 1.35rem; font-weight: 700; margin: 0 0 6px; }
+  .core p { margin: 0; font-size: 0.93rem; opacity: 0.92; }
+  @media (prefers-color-scheme: dark) { .core div { color: #0E1620; } }
+  .chips li.hot { background: var(--accent); color: #fff; font-weight: 600; }
+  @media (prefers-color-scheme: dark) { .chips li.hot { color: #0E1620; } }
+  h3.group { font-size: 1.15rem; font-weight: 600; margin: 40px 0 6px; padding-top: 4px; }
+  h3.group:first-of-type { margin-top: 0; }
+  p.group-note { color: var(--muted); margin: 0 0 18px; font-size: 0.95rem; }
+
   footer { padding: 28px 0 44px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
 
   @media (max-width: 860px) {
     .hero { grid-template-columns: 1fr; padding-top: 40px; }
     .csr { grid-template-columns: 1fr; gap: 14px; }
+    .core { grid-template-columns: 1fr; }
     .more { grid-template-columns: 1fr; }
     .stack-row, .job { grid-template-columns: 1fr; gap: 10px; }
     .topbar nav { gap: 16px; }
@@ -157,8 +170,8 @@
     <div class="hero">
       <div>
         <h1>Sagaya Salwin&nbsp;S</h1>
-        <p class="role">SAP ABAP Technical Consultant · EWM, TM &amp; SAP BTP</p>
-        <p class="summary">I solve problems in live SAP systems: performance tuning with AMDP, RAP and OData APIs, EWM RF screens and enhancements, EWM–TM integration fixes, and SAP CAP and Fiori apps with mobile notifications and AI agents on top. My work runs in warehouses and finance teams across manufacturing and distribution companies in Nigeria and Ghana.</p>
+        <p class="role">SAP ABAP Developer · RAP · SAP CAP · EWM</p>
+        <p class="summary">I build modern SAP the clean-core way: RAP services and Fiori apps on S/4HANA, SAP CAP apps on BTP with Event Mesh, mobile notifications and AI agents, plus EWM RF and enhancements in live warehouses. My work runs in warehouses and finance teams across manufacturing and distribution companies in Nigeria and Ghana.</p>
         <ul class="facts">
           <li><strong>Based in</strong> India</li>
           <li><strong>Onsite experience</strong> Nigeria, 2 assignments of 1 month each</li>
@@ -199,24 +212,23 @@
   <section id="stack">
     <div class="wrap">
       <h2 class="title">Technology stack</h2>
-      <p class="lede">What I use in delivered projects, from the database layer to the user’s phone.</p>
+      <p class="lede">What I use in delivered projects, from the database layer to the user’s phone. My core strengths come first.</p>
+      <div class="core">
+        <div><h3>RAP</h3><p>Managed and unmanaged scenarios: Fiori elements apps, custom actions and real-time APIs on S/4HANA.</p></div>
+        <div><h3>SAP CAP</h3><p>Node.js apps on SAP BTP with Event Mesh, Joule mobile notifications and AI agents, one running in production.</p></div>
+        <div><h3>SAP EWM</h3><p>RF screens, complex enhancements and EWM–TM integration, with functional implementation and onsite experience.</p></div>
+      </div>
       <div class="stack-table">
         <div class="stack-row">
           <h3>ABAP &amp; S/4HANA</h3>
           <ul class="chips">
-            <li>ABAP OO</li><li>RAP managed</li><li>RAP unmanaged</li><li>CDS views</li><li>AMDP / SQLScript</li><li>OData V2 &amp; V4</li><li>BAPIs</li><li>BAdIs &amp; enhancement framework</li><li>Smart Forms</li>
+            <li class="hot">RAP managed</li><li class="hot">RAP unmanaged</li><li>ABAP OO</li><li>CDS views</li><li>AMDP / SQLScript</li><li>OData V2 &amp; V4</li><li>BAPIs</li><li>BAdIs &amp; enhancement framework</li><li>Adobe Forms (JavaScript)</li>
           </ul>
         </div>
         <div class="stack-row">
-          <h3>SAP EWM</h3>
+          <h3>SAP BTP</h3>
           <ul class="chips">
-            <li>RF framework (RFUI)</li><li>Custom RF screens &amp; function keys</li><li>Inbound &amp; outbound processes</li><li>Output types</li><li>Functional implementation</li>
-          </ul>
-        </div>
-        <div class="stack-row">
-          <h3>SAP TM</h3>
-          <ul class="chips">
-            <li>Freight orders &amp; units</li><li>EWM–TM integration</li><li>TM BAdIs</li>
+            <li class="hot">SAP CAP (Node.js)</li><li>SAP Event Mesh</li><li>Joule &amp; mobile push notifications</li><li>XSUAA</li><li>Destinations</li><li>MTA deployment</li>
           </ul>
         </div>
         <div class="stack-row">
@@ -226,9 +238,15 @@
           </ul>
         </div>
         <div class="stack-row">
-          <h3>SAP BTP</h3>
+          <h3>SAP EWM</h3>
           <ul class="chips">
-            <li>SAP CAP (Node.js)</li><li>SAP Event Mesh</li><li>Joule &amp; mobile push notifications</li><li>XSUAA</li><li>Destinations</li><li>MTA deployment</li>
+            <li class="hot">RF framework (RFUI)</li><li>Custom RF screens &amp; function keys</li><li>Inbound &amp; outbound processes</li><li>Output types</li><li>Functional implementation</li>
+          </ul>
+        </div>
+        <div class="stack-row">
+          <h3>SAP TM</h3>
+          <ul class="chips">
+            <li>Freight orders &amp; units</li><li>EWM–TM integration</li><li>TM BAdIs</li>
           </ul>
         </div>
         <div class="stack-row">
@@ -244,10 +262,36 @@
   <section id="projects">
     <div class="wrap">
       <h2 class="title">Featured projects</h2>
-      <p class="lede">Ordered by business impact. Company names and system details are left out on purpose.</p>
+      <p class="lede">Grouped by technology, the most in-demand first. Company names and system details are left out on purpose.</p>
+
+      <h3 class="group">SAP CAP &amp; BTP</h3>
+      <p class="group-note">Side-by-side extensions on SAP BTP, keeping the S/4HANA core clean.</p>
 
       <article class="project">
-        <header><h3>ZFO2GL performance: GL report from 10–15 minutes to seconds</h3><span class="area">“Above &amp; Beyond” award · ABAP Performance</span></header>
+        <header><h3>PO approval with mobile push notifications and AI agents</h3><span class="area">CAP · Event Mesh · Joule · AI</span></header>
+        <div class="csr">
+          <div><h4>Challenge</h4><p>Approval requests arrived by email, where they were easily missed or buried, which held up purchase orders. Approvers also had to open and investigate each PO before deciding.</p></div>
+          <div><h4>Solution</h4><p>When a PO is created in S/4HANA, the event flows through SAP Event Mesh to a CAP app. An AI agent analyses the PO, the approval matrix picks the approver, and a mobile push notification through Joule lands on the approver’s phone with the analysis and approve or hold options. A Fiori inbox works on desktop and mobile. A second agent, built on CAP with MCP and Gemini, answers PO questions in a chat.</p></div>
+          <div class="result-col"><h4>Result</h4><p>Like a WhatsApp message, the notification gets seen right away instead of sitting unread in email, and the approver decides from it with the analysis already done. The AI analysis is a working proof of concept on top of the approval flow.</p></div>
+        </div>
+        <ul class="tech"><li>SAP CAP</li><li>SAPUI5 / Fiori</li><li>SAP Event Mesh</li><li>Joule mobile notifications</li><li>MCP</li><li>Gemini</li><li>React</li></ul>
+      </article>
+
+      <article class="project">
+        <header><h3>Credit limit approval app, live in production</h3><span class="area">CAP · Fiori · BTP</span></header>
+        <div class="csr">
+          <div><h4>Challenge</h4><p>Credit limit changes needed an approval flow that puts the customer’s real numbers in front of the right approver, quickly.</p></div>
+          <div><h4>Solution</h4><p>A CAP and Fiori app on BTP that reads customer and ledger balance data live from S/4HANA, routes each request through an approval matrix and alerts approvers with Joule mobile notifications. Requests are raised per credit segment. Credit insurance changes end-date the old entry and create a new one through standard BAPIs, so history stays in S/4HANA.</p></div>
+          <div class="result-col"><h4>Result</h4><p>Running in production. No credit request waits unseen in an inbox, and S/4HANA stays the single source of truth.</p></div>
+        </div>
+        <ul class="tech"><li>SAP CAP</li><li>SAPUI5 / Fiori</li><li>Destinations</li><li>Joule notifications</li><li>BAPIs</li></ul>
+      </article>
+
+      <h3 class="group">RAP &amp; ABAP on HANA</h3>
+      <p class="group-note">Modern ABAP: RAP business objects, OData APIs and HANA-level performance.</p>
+
+      <article class="project">
+        <header><h3>ZFO2GL performance: GL report from 10–15 minutes to seconds</h3><span class="area">“Above &amp; Beyond” award · AMDP</span></header>
         <div class="csr">
           <div><h4>Challenge</h4><p>ZFO2GL, a complex general ledger dump report, took 10–15 minutes per run, and finance users depended on it repeatedly.</p></div>
           <div><h4>Solution</h4><p>Redesigned the data processing at AMDP level, converting a table-function AMDP into a standard AMDP so the heavy logic runs inside SAP HANA.</p></div>
@@ -257,6 +301,29 @@
       </article>
 
       <article class="project">
+        <header><h3>Real-time finance posting API with RAP unmanaged</h3><span class="area">RAP unmanaged · OData</span></header>
+        <div class="csr">
+          <div><h4>Challenge</h4><p>The standard finance posting API posted documents for an internal partner portal but didn’t return the new document number to the caller.</p></div>
+          <div><h4>Solution</h4><p>Built a RAP unmanaged scenario that wraps the standard posting and returns a customised response containing the generated document number in the same call.</p></div>
+          <div class="result-col"><h4>Result</h4><p>The portal’s back end gets the document number in real time, with no second lookup.</p></div>
+        </div>
+        <ul class="tech"><li>RAP unmanaged</li><li>CDS</li><li>OData</li><li>FI posting</li></ul>
+      </article>
+
+      <article class="project">
+        <header><h3>Fiori elements apps with RAP managed</h3><span class="area">RAP managed · Fiori elements</span></header>
+        <div class="csr">
+          <div><h4>Challenge</h4><p>Business teams needed apps for e-commerce bundle materials and for tracking payroll salary processing, and two business entities sharing one app must never see each other’s data.</p></div>
+          <div><h4>Solution</h4><p>Two RAP managed business objects with Fiori elements UIs: a bundle material app with header-to-item navigation, and a payroll tracker with a custom action button. CDS access controls and instance authorization separate the data per entity.</p></div>
+          <div class="result-col"><h4>Result</h4><p>Two apps built the standard RAP way, with little custom code and data separation enforced in the business object itself.</p></div>
+        </div>
+        <ul class="tech"><li>RAP managed</li><li>CDS</li><li>DCL access control</li><li>Fiori elements</li><li>Custom actions</li></ul>
+      </article>
+
+      <h3 class="group">SAP EWM, RF &amp; TM</h3>
+      <p class="group-note">Warehouse and transport fixes delivered in live operations.</p>
+
+      <article class="project">
         <header><h3>Separating EWM and TM after a system upgrade</h3><span class="area">EWM · TM</span></header>
         <div class="csr">
           <div><h4>Challenge</h4><p>After the 2025 upgrade, deliveries for a food manufacturing business started defaulting to TM-managed, while the business needs EWM and TM to run separately. Once such a delivery reaches EWM it can’t be changed, so warehouse and transport operations were at risk of stopping.</p></div>
@@ -264,26 +331,6 @@
           <div class="result-col"><h4>Result</h4><p>Downtime prevented across all affected plants, with EWM and TM running independently as the business intended.</p></div>
         </div>
         <ul class="tech"><li>Enhancement framework</li><li>Outbound delivery</li><li>EWM</li><li>TM</li><li>TVARVC</li></ul>
-      </article>
-
-      <article class="project">
-        <header><h3>PO approval with mobile push notifications and AI agents</h3><span class="area">SAP BTP · Fiori · AI</span></header>
-        <div class="csr">
-          <div><h4>Challenge</h4><p>Approval requests arrived by email, where they were easily missed or buried, which held up purchase orders. Approvers also had to open and investigate each PO before deciding.</p></div>
-          <div><h4>Solution</h4><p>When a PO is created in S/4HANA, the event flows through SAP Event Mesh to a CAP app. An AI agent analyses the PO, the approval matrix picks the approver, and a mobile push notification through Joule lands on the approver’s phone with the analysis and approve or hold options. A Fiori inbox works on both desktop and mobile. A second agent, built on CAP with MCP and Gemini, answers PO questions in a chat and fetches PO details on request.</p></div>
-          <div class="result-col"><h4>Result</h4><p>Like a WhatsApp message, the notification gets seen right away instead of sitting unread in email, and the approver decides from it with the analysis already done. The AI analysis is a working proof of concept on top of the approval flow.</p></div>
-        </div>
-        <ul class="tech"><li>SAP CAP</li><li>SAPUI5 / Fiori</li><li>SAP Event Mesh</li><li>Joule mobile notifications</li><li>MCP</li><li>Gemini</li><li>React</li></ul>
-      </article>
-
-      <article class="project">
-        <header><h3>Stopping over-quantity deliveries at the source</h3><span class="area">EWM · MM</span></header>
-        <div class="csr">
-          <div><h4>Challenge</h4><p>Outbound deliveries exceeding stock transport order quantities got stuck in EWM queues. Clearing each case took 1–2 days of coordination between MM and EWM teams.</p></div>
-          <div><h4>Solution</h4><p>Implemented a BAdI that blocks goods issue when the delivery quantity exceeds the PO quantity, so the problem is caught immediately instead of surfacing later in the queue.</p></div>
-          <div class="result-col"><h4>Result</h4><p>Queue blockages from over-quantity deliveries eliminated, along with the recurring manual monitoring.</p></div>
-        </div>
-        <ul class="tech"><li>BAdI</li><li>Goods issue</li><li>EWM queues</li><li>Stock transport orders</li></ul>
       </article>
 
       <article class="project">
@@ -297,13 +344,13 @@
       </article>
 
       <article class="project">
-        <header><h3>Real-time finance posting API with RAP unmanaged</h3><span class="area">RAP · Finance</span></header>
+        <header><h3>Stopping over-quantity deliveries at the source</h3><span class="area">EWM · MM</span></header>
         <div class="csr">
-          <div><h4>Challenge</h4><p>The standard finance posting API posted documents for an internal partner portal but didn’t return the new document number to the caller.</p></div>
-          <div><h4>Solution</h4><p>Built a RAP unmanaged scenario that wraps the standard posting and returns a customised response containing the generated document number in the same call.</p></div>
-          <div class="result-col"><h4>Result</h4><p>The portal’s back end gets the document number in real time, with no second lookup.</p></div>
+          <div><h4>Challenge</h4><p>Outbound deliveries exceeding stock transport order quantities got stuck in EWM queues. Clearing each case took 1–2 days of coordination between MM and EWM teams.</p></div>
+          <div><h4>Solution</h4><p>Implemented a BAdI that blocks goods issue when the delivery quantity exceeds the PO quantity, so the problem is caught immediately instead of surfacing later in the queue.</p></div>
+          <div class="result-col"><h4>Result</h4><p>Queue blockages from over-quantity deliveries eliminated, along with the recurring manual monitoring.</p></div>
         </div>
-        <ul class="tech"><li>RAP unmanaged</li><li>CDS</li><li>OData</li><li>FI posting</li></ul>
+        <ul class="tech"><li>BAdI</li><li>Goods issue</li><li>EWM queues</li><li>Stock transport orders</li></ul>
       </article>
 
       <article class="project">
@@ -331,15 +378,12 @@
   <section id="more">
     <div class="wrap">
       <h2 class="title">More delivered work</h2>
-      <p class="lede">Applications, APIs and enhancements across S/4HANA and SAP BTP.</p>
+      <p class="lede">Further APIs, forms and enhancements across S/4HANA and SAP BTP.</p>
       <div class="more">
-        <article><h3>Credit limit approval app</h3><p>SAP CAP and Fiori app with an approval matrix and Joule mobile notifications, so no credit request waits unseen in an inbox. Reads live customer and ledger data from S/4HANA. Running in production.</p></article>
         <article><h3>Shelf-life date sync in EWM</h3><p>BAdI that fetches the correct source data, synchronises the confirmation date and calculates the shelf-life expiration date (SLED) consistently with material master logic.</p></article>
         <article><h3>Manufacturing order creation API</h3><p>API that creates manufacturing orders including custom fields, using the standard BAPI.</p></article>
-        <article><h3>Bundle material app (RAP managed)</h3><p>Fiori elements app with header-to-item navigation for e-commerce bundle materials, with row-level data separation through CDS access controls.</p></article>
-        <article><h3>Payroll salary processing tracker (RAP managed)</h3><p>Fiori elements tracker for salary processing with a custom action button.</p></article>
         <article><h3>Freight order audit check (RAP)</h3><p>Audit checks on TM freight orders built with RAP.</p></article>
-        <article><h3>Dynamic Smart Forms</h3><p>Dynamic print forms built with Smart Forms and JavaScript logic.</p></article>
+        <article><h3>Dynamic Adobe Forms</h3><p>Dynamic print forms built with Adobe Forms and JavaScript scripting.</p></article>
         <article><h3>SAP OData connected to AI through MCP</h3><p>Exposed SAP OData services as MCP tools so an AI assistant can read SAP data directly.</p></article>
         <article><h3>EWM functional implementation</h3><p>Functional as well as technical work on EWM implementations, plus a complete embedded EWM warehouse built from scratch in a sandbox.</p></article>
       </div>
